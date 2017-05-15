@@ -16,7 +16,7 @@ public class TestOtsCli {
     OtsCli.main(new String[]{"upgrade", "some_non_existent_file.name"});
     
     final String logContents = loggerForTest.contents();
-    assertTrue(logContents.contains("GRAVE: No valid file"));
+    assertTrue(logContents.contains("No valid file"));
   }
   
   private class StringLoggerForTest {
